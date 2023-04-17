@@ -3,7 +3,7 @@ import deliverIcon from "../assets/icons/deliver.png";
 import cake from "../assets/images/cake.png";
 import { allItems } from "../context/shop-context";
 import { ShopContext } from "../context/shop-context";
-import { useContext, useState } from "react";
+import { FormEvent, useContext, useState } from "react";
 import { contextProps } from "../context/shop-context";
 
 export const Basket = () => {
@@ -15,7 +15,7 @@ export const Basket = () => {
   const total = getTotalCartAmount();
   const len = getlen();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     setDeliveryForm((prev) => !prev);
   };
@@ -88,7 +88,7 @@ export const Basket = () => {
             >
               X
             </button>
-            <form onSubmit={(e) => handleSubmit(e)}>
+            <form onSubmit={handleSubmit}>
               <div className="flex flex-col gap-[8px]">
                 <input className="input" type="text" placeholder="Ваше имя" />
                 <input
