@@ -2,7 +2,7 @@ import burgerImg from "../assets/images/burger-hero.png";
 
 export const Hero = () => {
   return (
-    <section className="w-full h-screen sm:h-[calc(100vh-110px)] grid items-center bg-hero-bg-small sm:bg-hero-bg-medium md:bg-hero-bg-large bg-no-repeat bg-center bg-cover pt-[30px] sm:pt-0">
+    <section className="hero__section w-full h-screen sm:h-[calc(100vh-110px)] grid items-center  bg-no-repeat bg-center bg-cover pt-[30px] sm:pt-0">
       <div className="w-full h-full flex flex-col-reverse sm:flex-row  items-center justify-center gap-5">
         <img
           className="hero-burg w-3/4 sm:w-1/4"

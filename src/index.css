@@ -11,6 +11,22 @@ body {
   @apply bg-orange text-white;
 }
 
+.hero__section {
+  background-image: url("./assets/images/small-screen-bg.png");
+}
+
+@media (min-width: 640px) {
+  .hero__section {
+    background-image: url("./assets/images/hero-medium-screen.png");
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__section {
+    background-image: url("./assets/images/hero-bg.png");
+  }
+}
+
 .hero-burg {
   animation: translate-in 1s ease infinite;
 }

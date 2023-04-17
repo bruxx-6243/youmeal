@@ -13,11 +13,6 @@ export default {
       fontFamily: {
         nunito: ["Nunito", "sans-serif"],
       },
-      backgroundImage: {
-        "hero-bg-large": "url('./src/assets/images/hero-bg.png')",
-        "hero-bg-medium": "url('./src/assets/images/hero-medium-screen.png')",
-        "hero-bg-small": "url('./src/assets/images/small-screen-bg.png')",
-      },
     },
   },
   plugins: [],
